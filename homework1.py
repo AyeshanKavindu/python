@@ -1,4 +1,4 @@
-capital_city = input("What is the capital city of Japan?  ")
+capital_city = input("What is the capital city of Japan?\n  ")
 
 answer1 = "Tokyo"
 answer2 = "tokyo"
