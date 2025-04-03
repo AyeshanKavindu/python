@@ -1,16 +1,15 @@
-attempt = 0
+max_attempts = 5
+user_attempts = 0
 
-while attempt < 5:
-    user_inputs = input("What is the capital city of Japan? ")
-
-    if user_inputs == "tokyo" or user_inputs == "Tokyo":
+while user_attempts < max_attempts:
+    user_attempts += 1
+    user_answer = input("What is the capital city of Japan?\n")
+    
+    if user_answer.lower() == "tokyo":
         print("Correct answer!")
         break
     else:
-        attempt += 1  
-        print(f"Incorrect! You have {5 - attempt} more chance")
-
-if attempt == 5:
-    print("You've used all 5 attempts. The correct answer is Tokyo.test")
-
-
+        print(f"Incorrect answer. Attempt {user_attempts}/{max_attempts}")
+        
+        if user_attempts >= max_attempts:
+            print("You reached the max attempts.")
