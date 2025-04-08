@@ -25,7 +25,6 @@ match_count = len(matched_numbers)
 for win_number in winning_numbers:
     print(win_number)
 
-print(f"Matched numbers: {matched_numbers}")
 print(f"You matched {match_count} numbers!")
 
 if match_count == 3:
