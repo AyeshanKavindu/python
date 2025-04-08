@@ -22,9 +22,11 @@ winning_numbers = {10, 25, 32, 41, 43, 45, 50}
 matched_numbers = user_numbers.intersection(winning_numbers)
 match_count = len(matched_numbers)
 
-print(f"\nWinning numbers: {winning_numbers}")
+for win_number in winning_numbers:
+    print(win_number)
+
 print(f"Matched numbers: {matched_numbers}")
-print(f"You matched {match_count} number(s)!")
+print(f"You matched {match_count} numbers!")
 
 if match_count == 3:
     print("You win $4!")
@@ -35,6 +37,6 @@ elif match_count == 5:
 elif match_count == 6:
     print("You win $30,000!")
 elif match_count == 7:
-    print("🎉 YOU WIN $5,000,000! 🎉")
+    print("YOU WIN $5,000,000!")
 else:
-    print("Sorry, no prize this time.")
+    print("Sorry, no prize")
